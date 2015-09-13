@@ -1,0 +1,23 @@
+<section>
+	<h1>Items<h1/>
+	<%= form_for :item, url: {:action => "create"} do |f|%>
+		<table>
+			<tr>
+				<td><%= f.label :content%> :</td>
+				<td><%= f.text_field :content%></td>
+			</tr>
+			<tr>
+				<td><%= f.label :start_date%> :</td>
+				<td><%= f.text_field :start_date, placeholder: "dd/mm/yy"%></td>
+			</tr>
+			<tr>
+				<td><%= f.label :finish_date%> :</td>
+				<td><%= f.text_field :finish_date, placeholder: "dd/mm/yy"%></td>
+			</tr>
+		</table>
+		<%= submit_tag ("Submit")%>
+	<%end%>
+	<div id="button" style="margin-top: 5px;">
+			<%= link_to "Back", lists_path %>
+		</div>
+</section>

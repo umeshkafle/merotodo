@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Kaam</title>
+  			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  			<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+ 		 	<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="header_logo">
+					<%= image_tag('logo.png', :size =>"50X50", :alt => 'logo') %>
+				</div>
+				<nav>
+					<ul>
+						<li><%= link_to "Home", lists_path%></li>
+						<li><a href="add.html">Add Items</a></li>
+						<li><a href="view.html">View Items</a></li>
+					</ul>
+				</nav>
+			</header>
+			<%= yield %>
+		</div>
+	</body>
+</html>

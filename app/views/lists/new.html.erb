@@ -1,0 +1,15 @@
+<section>
+	<h1>Kaam list</h1>
+	<%=form_for @list do |f|%>
+		<p>
+			<%= f.label :title%>
+			<%= f.text_field :title, placeholder: "Enter the kaam title"%>
+		</p>
+		<p>
+			<%= f.label :description%>
+			<%= f.text_area :description%>
+		</p>
+		<%= submit_tag ("Create kaam")%><br/>
+		<%= link_to "Back", lists_path %>
+	<%end%>
+</section>

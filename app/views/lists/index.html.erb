@@ -1,0 +1,26 @@
+<section>
+	<h1>Kaam</h1>
+	<p>
+		<div id="button">
+			<%= link_to "Add kaam", new_list_path %><br/>
+		</div>
+		<%@lists.each do |list|%>
+			<table>
+				<tr>
+					<td><h2>Title : </h2></td>
+					<td><%=list.title%></td>
+				</tr>
+				<tr>
+					<td><h2>Description : </h2></td>
+					<td> <%=list.description%></td>
+				</tr>
+			</table>
+			<menu>
+				<ul>
+					<li><%= link_to "Delete", list_path(list.id),method: :delete, data: {confirm: "Are you sure"}%></li>
+					<li><%= link_to "Add items", new_list_item_path(list)%></li>
+					<li><%= link_to "View items",list_items_path(list) %></li>
+				</ul>
+			</menu>
+		<%end%>	
+</section>

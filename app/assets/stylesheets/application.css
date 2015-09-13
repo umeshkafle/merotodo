@@ -1,0 +1,144 @@
+body 
+{
+	margin: 0px;
+	background: url(./background_texture.png);
+}
+
+html body #wrapper 
+{
+	display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:80px;
+    margin-left:80px;
+}
+
+#wrapper
+{
+	width: 80%;
+	background: url(./wrapper_texture.png) repeat;
+}
+
+header
+{
+	padding: 5px;
+}
+
+header #header_logo
+{
+	float: left;
+	margin-left: 10px;
+	margin-top: 20x;
+	padding: 10px;
+}
+
+header nav
+{
+	float: right;
+}
+
+header nav ul {
+	overflow: hidden;
+	padding: 35px 0 0 0;
+	margin: 0px auto;
+	list-style: none;
+	margin-left: 95px;
+}
+
+header nav ul li {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+header nav ul li a 
+{
+	float: left;
+	display: block;
+	margin: 0px 5px;
+	padding: 10px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;	
+	outline: none;
+	border-radius: 5px;
+    transition: background 0.9s linear 0s, color 0.3s linear 0s;
+}
+
+header nav li a:hover, #menu li .current {
+	color: #ffffff;
+	background: #000000;
+}
+
+section
+{
+	margin-left: 15px;
+	clear: both;
+	padding: 5px 10px 10px 10px;
+	margin-top: 5px;
+}
+
+#button
+{
+	background-color: white;
+	padding: 5px 5px 5px 10px;
+	text-decoration: none;
+	width: 90px;
+	margin-bottom: 20px;
+}
+
+table
+{
+	margin-top: 0px;
+	padding: 0px 5px;
+	margin-bottom: 10px;
+}
+
+menu
+{
+	margin-top: 0px;
+}
+
+menu ul
+{
+	overflow: hidden;
+	padding: 10px;
+	list-style: none;
+	margin-left: -60px;
+}
+
+menu ul li 
+{
+	display: inline;
+}
+
+menu ul li a 
+{
+	float: left;
+	display: block;
+	padding: 10px 10px;
+	margin: 0px 5px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;	
+	outline: none;
+	border-radius: 5px;
+    transition: background 1s linear 0s, color 0.5s linear 0s;
+}
+
+menu li a:hover, #menu li .current 
+{
+	color: #ffffff;
+	background: #000000;
+}
+

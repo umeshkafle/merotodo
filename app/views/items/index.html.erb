@@ -1,0 +1,30 @@
+<section>
+	<h1>Kaam Lists</h1>
+		<%@items.each do |item|%>
+			<table>
+				<tr>
+					<td><strong>Content</strong>: </td>
+					<td><%=item.content%></td>
+				</tr>
+				<tr>
+					<td><strong>StartDate</strong>: </td>
+					<td><%item.start_date%></td>
+				</tr>
+				<tr>
+					<td><strong>FinishDate</strong>: </td>
+					<td><%item.finish_date%></td>
+				</tr>
+			</table>
+			<div id="button">
+				<%= link_to "Delete", list_item_path(@list, item.id), method: :delete, data: {confirm: "Are you sure"} %>
+			</div>		
+		<%end%>
+		<div id="button">
+			<%= link_to "Back", lists_path %>
+		</div>
+		
+</section>
+		
+
+
+
